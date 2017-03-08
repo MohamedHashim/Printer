@@ -1,24 +1,8 @@
 package com.hashim.mohamed.printer;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
-
-
-import android.media.ThumbnailUtils;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.provider.MediaStore;
-import android.pt.Cprinter;
-import android.pt.printer.Printer;
-import android.R.integer;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog.Builder;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -26,15 +10,17 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.BitmapFactory;
-import android.graphics.BitmapFactory.Options;
 import android.graphics.Matrix;
-
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.pt.printer.Printer;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 
 public class PrintActivity extends Activity {
@@ -96,9 +82,9 @@ public class PrintActivity extends Activity {
 		
 	}
 
-	public static void Messagebox(Context context,String info)
+	public static void Messagebox(Context context, String info)
 	{
-		Builder builder = new Builder(context);    
+		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setTitle("title");   
 		builder.setMessage(info);     
 		builder.setPositiveButton("yes", null);    

@@ -9,7 +9,6 @@ import android.content.DialogInterface.OnKeyListener;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.Printer;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +23,7 @@ public class ActivityPrinter extends Activity {
 
 	
 	
-    Printer printer = null;
+    android.pt.printer.Printer printer = null;
     EditText print_EditText =null;
     AlertDialog adia = null;
     String printer_status = null;
@@ -46,7 +45,7 @@ public class ActivityPrinter extends Activity {
 		super.onCreate(savedInstanceState); 
 		setContentView(R.layout.activity_printer);
 		
-		printer = new Printer();
+		printer = new android.pt.printer.Printer();
 
 		context = ActivityPrinter.this;
 		
@@ -93,7 +92,7 @@ public class ActivityPrinter extends Activity {
 	//消息提示土司
 	public  static void Toast(Context context,String info)
 	{ 
-		Toast.makeText(context, info, 0).show();
+		Toast.makeText(context, info, Toast.LENGTH_LONG).show();
 	}
 	public void show(Context context ,String msg)
 	{
@@ -922,7 +921,7 @@ public class ActivityPrinter extends Activity {
 		
 		if (len < 0) {  
 			  
-			 Toast.makeText(this, "print fail ", 0).show();   
+			 Toast.makeText(this, "print fail ", Toast.LENGTH_LONG).show();
 		}
 	}	
 	

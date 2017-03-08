@@ -1,15 +1,12 @@
 package com.hashim.mohamed.printer;
 
 
-
-import android.os.Bundle;
-import android.pt.Cprinter;
-import android.pt.printer.Printer;
 import android.app.Activity;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
+import android.os.Bundle;
+import android.pt.printer.Printer;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
