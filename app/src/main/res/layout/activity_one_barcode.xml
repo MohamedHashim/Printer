@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneBarcode" 
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+    <RelativeLayout
+       	android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="2"
+		android:hint="Please input the 7 number between 0~9"
+		android:id="@+id/et_ean8" 
+		android:digits="0123456789"
+		android:text="0123456" 
+			
+		/> 
+		 
+			
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#66aa88" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_ean8"	
+		android:id="@+id/bt_ean8"
+		android:onClick="printcode_ean8" 
+		android:text="print EAN8" 
+		android:textSize="20sp"  
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="1"
+		android:hint="Please input the 12 number between 0~9"
+		android:id="@+id/et_ean13" 
+		android:digits="0123456789"
+		android:text="012345678912"
+		android:layout_below="@id/bt_ean8"    	
+		/> 
+		 
+			
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#88aa00" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_ean13"	
+		android:id="@+id/bt_ean13"
+		android:onClick="printcode_ean13" 
+		android:text="print EAN13" 
+		android:textSize="20sp"  
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="2"
+		android:hint="Please input the 11 number between 0~9"
+		android:id="@+id/et_upca" 
+		android:digits="0123456789"
+		android:text="07567816412"
+		android:layout_below="@id/bt_ean13"    	
+		/> 
+		 
+			
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#6f6f6f" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_upca"	
+		android:id="@+id/bt_upca"
+		android:onClick="printcode_upca" 
+		android:text="print UPC-A" 
+		android:textSize="20sp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="1"
+		android:hint="Please input the 8 number between 0~9,The first number must be 0"
+		android:id="@+id/et_upce" 
+		android:digits="0123456789"
+		android:text="04252614"
+		android:layout_below="@id/bt_upca"    	
+		/> 
+		 
+			
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#646464" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_upce"	
+		android:id="@+id/bt_upce"
+		android:onClick="printcode_upce" 
+		android:text="print UPC-E" 
+		android:textSize="20sp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="2"
+		android:hint="Please input character between 0~9,A~Z,SP,$，%，*，+，-，.，/"
+		android:id="@+id/et_code39" 
+		android:digits="0123456789 $%*+-./ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		android:text="ABCD1234"
+		android:layout_below="@id/bt_upce"    	
+		/> 
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#99aacc" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_code39"	
+		android:id="@+id/bt_code39"
+		android:onClick="printcode_code39" 
+		android:text="print CODE39" 
+		android:textSize="20sp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="1"
+		android:hint="Please input character"
+		android:id="@+id/et_code93"
+		android:text="TEST93"
+		android:layout_below="@id/bt_code39"    	
+		/> 
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#99aacc" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_code93"	
+		android:id="@+id/bt_code93"
+		android:onClick="printcode_code93" 
+		android:text="print CODE93" 
+		android:textSize="20sp"
+		/>
+	
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="2"
+		android:hint="Please input character"
+		android:id="@+id/et_code128"
+		android:text="ABCD1234"
+		android:layout_below="@id/bt_code93"    	
+		/> 
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#99aacc" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_code128"	
+		android:id="@+id/bt_code128"
+		android:onClick="printcode_code128" 
+		android:text="print CODE128" 
+		android:textSize="20sp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="1"
+		android:hint="Please input character between 0~9"
+		android:id="@+id/et_itf"
+		android:digits="0123456789"
+		android:text="0123456789"
+		android:layout_below="@id/bt_code128"    	
+		/> 
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#aaaaff" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_itf"	
+		android:id="@+id/bt_codeitf"
+		android:onClick="printcode_itf" 
+		android:text="print ITF" 
+		android:textSize="20sp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="1"
+		android:hint="Please input character between 0~9,A~D,a~d,$,+,-,.,/,:,"
+		android:id="@+id/et_codabar"
+		android:digits="0123456789ABCDabcd$+-./:"
+		android:text="A40156B"
+		android:layout_below="@id/bt_codeitf"    	
+		/> 
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#88ffff" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_codabar"	
+		android:id="@+id/bt_codebar"
+		android:onClick="printcode_codabar" 
+		android:text="print CODABAR" 
+		android:textSize="20sp"
+		/>
+	
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0sp"		
+		android:lines="1"
+		android:hint="Please input character"
+		android:id="@+id/et_QRcode"
+		android:text="hello world!!!"
+		android:layout_below="@id/bt_codebar"    	
+		/> 
+	<Button  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#88ffff" 
+		android:layout_margin="0sp"
+		android:layout_below="@id/et_QRcode"	
+		android:id="@+id/bt_QRcode"
+		android:onClick="printcode_QR" 
+		android:text="print QRCODE" 
+		android:textSize="20sp"
+		/>
+	</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

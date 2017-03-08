@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gp7002printerDemo</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- printer -->
+    <string name="title_activity_print">PrintPictureActivity</string>
+    <string name="title_activity_one_barcode">OneBarcode</string>
+    <string name="get_version">version</string>
+    
+    <string name="open_printer">open printer</string> 
+    <string name="zoonIn">zoonIn</string>
+    <string name="set_align">set align</string>
+    <string name="left_margin">left margin</string>
+    <string name="right_margin">right margin</string>
+    <string name="line_space">line_space</string>
+    <string name="word_space">word_space</string> 
+    <string name="print_orient">print_orient</string>
+    <string name="set_bold">set_bold</string>
+    <string name="under_line">under_line</string>
+    <string name="printStatus">print_Status</string>
+    
+    <string name="set_inverse">set_inverse</string>
+    <string name="Enter">Enter</string>   
+    <string name="print_onebarcode">print one barcode</string>   
+    <string name="print_logopicture">print logo picture</string> 
+    <string name="select">select picture</string>
+    <string name="print_image">print picture</string>
+    
+    <string name="print_context">print context</string>
+    <string name="close_printer">close printer</string> 
+</resources>

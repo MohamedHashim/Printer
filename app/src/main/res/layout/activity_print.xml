@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".PrintActivity" >
+
+	
+	  <ImageView android:layout_width="wrap_content"   
+                 android:layout_height="wrap_content" 
+                 android:id="@+id/iv_pic"
+                 android:layout_centerHorizontal="true"
+                 android:src="@drawable/ic"/>    
+	
+	   	<Button 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5sp"
+		android:layout_below="@id/iv_pic"
+		android:id="@+id/bt_select"
+		android:onClick="select"
+		androidtext="@string/select"
+		android:background="@drawable/bt_style2" 
+		 
+		/>  
+	  <Button 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5sp"
+		android:layout_below="@id/bt_select"
+		android:id="@+id/bt_seek"
+		android:onClick="change"
+		android:text="@string/print_image"  
+		android:background="@drawable/bt_style1" 
+		 
+		/> 
+
+	    
+	
+</RelativeLayout>
